@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        height: fit-content;
+        /* default flex direction -> row  */
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse;
+         flex-direction: row-reverse; */
+        /* justify-content: center; */
+        /* justify-content: space-around;
+
+              justify-content: space-between;
+              justify-content: space-evenly;
+              justify-content: flex-end;
+              justify-content: flex-start; */
+
+        /* flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        flex-wrap: inherit; */
+
+        row-gap: 1rem;
+        column-gap: 1rem;
+        gap: 1rem;
+
+        align-items: center;
+        border: 1px solid;
+        padding: 12px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        text-align: center;
+        font-size: 22px;
+      }
+
+      #box1 {
+        background-color: aqua;
+        flex-shrink: 3;
+        flex-grow: 4;
+        order: 9;
+      }
+      #box2 {
+        background-color: rgb(66, 255, 13);
+        flex-shrink: 1;
+        flex-grow: 5;
+      }
+      #box3 {
+        background-color: rgb(8, 72, 72);
+        flex-grow: 9;
+
+        flex-shrink: 5;
+      }
+      #box4 {
+        background-color: rgb(69, 64, 207);
+        flex-shrink: 13;
+        flex-grow: 7;
+      }
+      #box5 {
+        background-color: rgb(162, 179, 50);
+        flex-shrink: 20;
+        flex-grow: 8;
+        order: 1;
+      }
+      #box6 {
+        background-color: rgb(55, 64, 48);
+        flex-shrink: 2;
+        flex-grow: 10;
+        order: 3;
+      }
+      #box7 {
+        background-color: rgb(255, 71, 234);
+        flex-shrink: 7;
+        flex-grow: 4;
+      }
+      #box8 {
+        background-color: rgb(136, 41, 41);
+        flex-shrink: 2;
+      }
+      #box9 {
+        background-color: rgb(255, 0, 102);
+        flex-shrink: 8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+      <div class="box" id="box5">5</div>
+      <div class="box" id="box6">6</div>
+      <!-- <div class="box" id="box7">7</div>
+      <div class="box" id="box8">8</div>
+      <div class="box" id="box9">9</div> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+
+    <style>
+      .container {
+        border: 1px solid rgb(195, 195, 195);
+        width: 629px;
+        margin: auto;
+        height: 233px;
+      }
+
+      .container > section {
+        display: inline-block;
+      }
+
+      .sec-img {
+        width: 250px;
+        text-align: center;
+        border-right: 1px solid rgb(195, 195, 195);
+        padding: 20px 0;
+      }
+
+      .prod-img {
+        width: 150px;
+      }
+
+      .prod-detail {
+        padding: 12px;
+        width: 350px;
+      }
+
+      .rating {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #388e3c;
+        color: white;
+        padding: 4px 6px;
+        border-radius: 9px;
+      }
+
+      .title {
+        cursor: pointer;
+      }
+
+      .price-detail span {
+        margin-right: 30px;
+        font-weight: 800;
+        font-size: 18px;
+      }
+
+      .per-off {
+        color: #388e3c;
+      }
+
+      .orig-price {
+        color: gray;
+        text-decoration: line-through;
+      }
+
+      .sec-btn {
+        padding: 12px;
+        text-align: center;
+      }
+
+      .btn1,
+      .btn2 {
+        margin-right: 60px;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 8px 14px;
+        color: white;
+        cursor: pointer;
+        border: none;
+      }
+
+      .btn1 {
+        background-color: #146cda;
+      }
+
+      .btn2 {
+        background-color: #4f4bb0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="sec-img">
+        <img
+          class="prod-img"
+          src="https://rukminim1.flixcart.com/image/416/416/xif0q/mobile/w/s/t/-original-imagfx6hzsqu438h.jpeg?q=70"
+          alt="Not availabe"
+        />
+      </section>
+      <section class="prod-detail">
+        <span class="rating">4.5</span>
+        <h2 class="title">OnePlus Nord CE 5G</h2>
+        <p class="desc">
+          Fast and reliable 5G smartphone with stunning display
+        </p>
+        <div class="price-detail">
+          <span class="per-off">12% off</span>
+          <span class="orig-price">&#8377;450</span>
+          <span class="disc-price">&#8377;399</span>
+        </div>
+        <section class="sec-btn">
+          <button class="btn1">Add To Cart</button>
+          <button class="btn2">Buy Now</button>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

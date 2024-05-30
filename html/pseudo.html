@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* unvisited */
+      .m-link:link {
+        color: aqua;
+      }
+      .m-link:visited {
+        color: red;
+      }
+
+      .m-link:active {
+        color: rgb(101, 228, 17);
+      }
+
+      .m-link:hover {
+        color: black;
+      }
+
+      .box p:first-child {
+        background-color: blue;
+      }
+      .box p:nth-child(3) {
+        background-color: yellow;
+      }
+
+      .btn {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        font: 18px;
+        padding: 6px 8px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: black;
+      }
+
+      .para::first-line {
+        color: red;
+      }
+
+      .para::first-letter {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.facebook.com" class="m-link">go to facebook</a>
+    <a href="https://www.canva.com" class="m-link">go to canva</a>
+    <a href="https://www.w3schools.com">go to w3 schhol</a>
+
+    <div class="box">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sed,
+        asperiores, velit accusantium a hic laborum facere esse natus dicta
+        placeat quod officia?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sed,
+        asperiores, velit accusantium a hic laborum facere esse natus dicta
+        placeat quod officia?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sed,
+        asperiores, velit accusantium a hic laborum facere esse natus dicta
+        placeat quod officia?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sed,
+        asperiores, velit accusantium a hic laborum facere esse natus dicta
+        placeat quod officia?
+      </p>
+    </div>
+
+    <button class="btn">Click</button>
+
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore impedit
+      numquam nulla assumenda eligendi enim quae sit voluptatum aut. Maxime
+      saepe accusamus voluptate quidem natus quis voluptatibus provident quasi
+      dolores, porro vero dolor aliquid.
+    </p>
+  </body>
+</html>

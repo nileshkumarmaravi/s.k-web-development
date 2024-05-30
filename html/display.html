@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Properties</title>
+    <style>
+      .container * {
+        border: 2px solid;
+        margin: 12px;
+        /* padding: 12px; */
+      }
+
+      .para {
+        /* display: none;
+              
+        /* inline element doesnt take margin  */
+        display: inline;
+        /* this makes element to behave like inline but it takes all properties of block element */
+        display: inline-block;
+        /* visibility: hidden; */
+        /* display: none; */
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos assumenda
+        repellat sunt ex, minus adipisci, alias dolor dignissimos consectetur
+        nobis fugit dicta esse fuga corrupti nemo provident ab ea itaque!
+      </div>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero
+        sequi quo.
+      </p>
+
+      <span>this is span</span>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos assumenda
+        repellat sunt ex, minus adipisci, alias dolor dignissimos consectetur
+        nobis fugit dicta esse fuga corrupti nemo provident ab ea itaque!
+      </div>
+
+      <span>>&#8377; 23</span>
+    </div>
+  </body>
+</html>

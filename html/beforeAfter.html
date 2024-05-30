@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .img-box {
+        border: 1px solid;
+        padding: 6px;
+        width: 20vw;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .img-box img {
+        width: 100%;
+      }
+
+      /* .img-box::before {
+        content: "jjhgjh";
+      } */
+
+      .img-box::after {
+        content: "";
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0000006e;
+        transition: all 0.5s ease-in;
+      }
+
+      /* .img-box:hover {
+        background-color: khaki;
+      } */
+
+      .img-box:hover::after {
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-box">
+      <img
+        src="https://img.freepik.com/free-photo/programming-background-with-html-text_23-2150040420.jpg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
